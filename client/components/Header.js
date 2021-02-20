@@ -8,15 +8,24 @@ const logEvent = (event, props) => {
   );
 };
 
+// Component name is a misnomer - it's really just a div where user can input task fields to add new task.
 const Header = props => (
   <div id="header">
     <h2>{props.projectTitle}</h2>
     <form>
       Title:
-      <input type="text" id="taskTitle" className="w3-input w3-border w3-round" />
+      <input
+        type="text"
+        id="taskTitle"
+        className="w3-input w3-border w3-round"
+      />
       <br></br>
       Owner:
-      <input type="text" id="taskOwner" className="w3-input w3-border w3-round"/>
+      <input
+        type="text"
+        id="taskOwner"
+        className="w3-input w3-border w3-round"
+      />
       <br></br>
       <input
         type="submit"
